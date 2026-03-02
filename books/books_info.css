@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #130d21;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+#logo {
+  width: 100px;
+}
+
+#nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+#about,
+#docs,
+#status,
+#menu {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#menu {
+  color: #d926d9;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+#close-menu {
+  display: none;
+  top: 0;
+  right: 0;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background-color: #130d21;
+  border: 0.1px solid #ffffff;
+  border-radius: 0.6rem;
+  padding: 0.9rem;
+  font-size: 1.2rem;
+  flex-direction: column;
+}
+
+.options a {
+  color: #f2f2f2;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+.options a:hover {
+  color: #d926d9;
+}
+#about:hover,
+#docs:hover,
+#status:hover,
+#menu:hover {
+  color: #d926d9;
+}
+.loader_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#loader {
+  width: 5rem;
+  height: 5rem;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+h1 {
+  color: #f2f2f2;
+  font-size: 2.5rem;
+}
+h3 {
+  color: #f2f2f2;
+  font-size: 1.2rem;
+  /* font-weight: 700; */
+}
+h4 {
+  font-size: 01.1rem;
+}
+p {
+  font-size: 1rem;
+}
+
+#books-info {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  color: #f2f2f2;
+}
+#heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+}
+#alias {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #d1d5db;
+}
+
+#container {
+  width: 65%;
+  border: 3px solid #f2f2f2;
+  padding: 3rem;
+  border-radius: 0.6rem;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 6rem;
+}
+
+#img-div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.75rem;
+}
+
+#poster {
+  width: 400px;
+  max-height: 100%;
+  aspect-ratio: 3/4;
+  /* object-fit: contain; */
+  border-radius: 0.6rem;
+}
+
+#links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+#api,
+#wiki {
+  text-decoration: none;
+  color: #d1d5db;
+  font-size: 1.2rem;
+}
+#api:hover,
+#wiki:hover {
+  text-decoration: underline;
+  color: #f2f2f2;
+}
+#data-div {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  row-gap: 1.3rem;
+  column-gap: 1.3rem;
+}
+
+#more-info {
+  width: 65%;
+  border: 3px solid #f2f2f2;
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-direction: column;
+}
+ul {
+  padding: 0.6rem 1rem;
+}
+li {
+  padding: 0.3rem 0;
+}
+
+.datas {
+  text-transform: capitalize;
+  width: 100%;
+  color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem;
+}
+
+.datas p {
+  margin-top: 0.8rem;
+}
+.datas svg {
+  font-size: 1.4rem;
+}
+
+.nun {
+  display: none;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+footer {
+  width: calc(100% - 3rem);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #d1d5db;
+  padding: 1rem;
+}
+#footer_links {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+#footer_links h3 {
+  font-size: 1.2rem;
+}
+#footer_links * {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+#general a,
+#db a,
+#info a {
+  color: #d1d5db;
+  width: fit-content;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+#general a:hover,
+#db a:hover,
+#info a:hover {
+  color: #d926d9;
+}
+hr {
+  width: 100%;
+  border: 0.1px solid #d926d9;
+}
+section {
+  margin-bottom: 2rem;
+}

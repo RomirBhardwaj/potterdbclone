@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="icon"
+      href="https://imgs.search.brave.com/mlFjPcVnGyQUgp0JiOKo3FeIqWYslvUURP2hYT1odbs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTdjZTI3Njk5/NGRkMWE2ZDRjMGNm/NjJhMGMwNTU1MzU5/MTM5MTVmY2FkZDk5/ZTA5MjA0N2U0NDM4/NzM2M2QzZC9wb3R0/ZXJkYi5jb20v"
+    />
+    <title></title>
+    <link rel="stylesheet" href="movie_info.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="nav">
+        <a href="../index.html"
+          ><img src="https://potterdb.com/images/logo.svg" alt="" id="logo"
+        /></a>
+        <div id="nav-links">
+          <div id="about">About</div>
+          <div id="docs">Docs</div>
+          <div id="status">Status</div>
+          <div id="menu">
+            <svg
+              id="burger-menu"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-8 h-8 stroke-current"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg
+              id="close-menu"
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              class="w-8 h-8 stroke-current"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              ></path>
+            </svg>
+            <div class="options">
+              <a href="../books/books.html">Books</a>
+              <a href="../characters/characters.html">Characters</a>
+              <a href="movies.html">Movies</a>
+              <a href="../potions/potions.html">Potions</a>
+              <a href="../spells/spells.html">Spells</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="loader_div">
+      <svg
+        id="loader"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M12 2.99988V5.99988M12 20.9999V17.9999M4.20577 16.4999L6.80385 14.9999M21 11.9999H18M16.5 19.7941L15 17.196M3 11.9999H6M7.5 4.20565L9 6.80373M7.5 19.7941L9 17.196M19.7942 16.4999L17.1962 14.9999M4.20577 7.49988L6.80385 8.99988"
+            stroke="#f2f2f2"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </g>
+      </svg>
+    </div>
+    <section id="movies-info">
+      <div id="heading">
+        <h1 id="name"></h1>
+      </div>
+
+      <div id="container">
+        <div id="img-div">
+          <img
+            id="poster"
+            src="https://potterdb.com/images/missing_character.svg"
+          />
+          <div id="links">
+            <a href="" id="api"></a>
+            <a href="" id="wiki"></a>
+          </div>
+        </div>
+        <div id="data-div"></div>
+      </div>
+
+      <div id="more-info"></div>
+    </section>
+    <footer>
+      <div id="footer_links">
+        <div id="general">
+          <h3>General</h3>
+          <hr />
+          <a href="index.html">Home</a>
+          <a href="https://potterdb.com/about">About</a>
+          <a href="#">Imprint</a>
+        </div>
+
+        <div id="db">
+          <h3>Database Search</h3>
+          <hr />
+          <a href="../books/books.html">Books</a>
+          <a href="../characters/characters.html">Characters</a>
+          <a href="movies.html">Movies</a>
+          <a href="../potions/potions.html">Potions</a>
+          <a href="../spells/spells.html">Spells</a>
+        </div>
+        <div id="info">
+          <h3>Information</h3>
+          <hr />
+          <a href="https://docs.potterdb.com/">API Docs</a>
+          <a href="#">Source</a>
+          <a href="#">Scrabby</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+      <div id="cp">Copyright © Potter DB 2026</div>
+    </footer>
+    <script src="movie_info.js"></script>
+  </body>
+</html>
