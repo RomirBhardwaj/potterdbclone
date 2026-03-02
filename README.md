@@ -1,5 +1,6 @@
 # Potter DB Clone
 
+<<<<<<< HEAD
 A responsive clone of PotterDB built using HTML, CSS, and JavaScript.
 
 ## 🚀 Features
@@ -25,3 +26,6 @@ A responsive clone of PotterDB built using HTML, CSS, and JavaScript.
 
 ## 📌 Purpose
 This project was built to practice DOM manipulation, API handling, and responsive design.
+=======
+Learning project built using HTML, CSS and JavaScript.
+>>>>>>> 89d96c9 (Added README)
